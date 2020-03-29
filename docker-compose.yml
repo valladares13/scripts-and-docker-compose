@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+    existdb:
+        ports:
+          - '9010:8080'
+          - '9011:8443'
+        container_name: existdb
+        image: 'existdb/existdb:latest'
+    mongodb:
+        image: mongo
+        restart: always
+        ports:
+          - '9020:27017'
+        environment:
+          MONGO_INITDB_ROOT_USERNAME: admin
+          MONGO_INITDB_ROOT_PASSWORD: admin
