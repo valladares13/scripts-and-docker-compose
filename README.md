@@ -14,6 +14,6 @@ The docker-compose has the following images:
 
 Change the docker-compose.yml with the image you need.
 
-> If oyu want to use PHPMyAdmin you must have the MySQL image to in the docker-compose.
+> If you want to use PHPMyAdmin you must have the MySQL image to in the docker-compose.
 
 > To change the user and passwords you just need to change the `.env file` with the correct credentials for you.
