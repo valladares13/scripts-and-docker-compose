@@ -1,21 +1,5 @@
 version: '3.3'
 services:
-    existdb:
-        ports:
-          - '9010:8080'
-          - '9011:8443'
-        container_name: existdb
-        image: 'existdb/existdb:latest'
-        
-    mongodb:
-        image: mongo
-        restart: always
-        ports:
-          - '9020:27017'
-        environment:
-          MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME}
-          MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
-          
     mysql:
         image: mysql:5.6
         container_name: mysql_container 

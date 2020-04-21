@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+    tomcat:
+        image: tomcat:latest
+        ports:
+          - "80:8080"
+        environment:
+          - TOMCAT_USERNAME=${TOMCAT_USERNAME}
+          - TOMCAT_PASSWORD=${TOMCAT_USERNAME}
+        container_name: tomcat
+        volumes:
+          - ./logs/:/usr/local/tomcat/logs/

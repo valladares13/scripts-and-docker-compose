@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+    existdb:
+        ports:
+          - '8080:8080'
+          - '8443:8443'
+        container_name: existdb
+        image: 'existdb/existdb:latest'
